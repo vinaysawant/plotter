@@ -1,0 +1,29 @@
+extends layout
+
+block content
+	div.container
+		div.row
+		nav.navbar.navbar-default.navbar-fixed-top
+			div.container-fluid
+				strong.navbar-text Driver Location Map
+		div.row(style="padding-top:20px")
+			div.col-md-3 
+				div.row
+					div.col-md-12
+						img.img-circle(src='/images/driver.png' style="max-width: 200px")
+				div.row
+					div.col-md-12
+						strong Driver Name
+				div.row
+					div.col-md-12
+						span 21 Years
+				div.row
+					div.col-md-12
+						span 10/10/1990
+				div.row
+					div.col-md-12
+						span Address: 708/23, Mumbai
+			div.col-md-9
+				div.row
+					div.col-md-12(style="height:500px")
+						div#map

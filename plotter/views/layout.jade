@@ -1,0 +1,20 @@
+doctype html
+html(ng-app='plotter' ng-controller='mainController')
+  head
+    title= title
+    meta(name="viewport" content="initial-scale=1.0")
+    meta(charset="utf-8")
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/bower_components/bootstrap/dist/css/bootstrap.min.css')
+  body
+    block content
+    block footer
+    script(src='/bower_components/jquery/dist/jquery.min.js')
+    script(src='/bower_components/bootstrap/dist/js/bootstrap.min.js')
+    script(src='/bower_components/angular/angular.min.js')
+    //- script(src='/bower_components/socket.io/test/socket.io.js')
+    script(src='/javascripts/ng-app.js')
+    script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBa32WIXlZ3XsOsPYsv-hE2G0QHdzQW5lQ&callback=initMap' async defer)
+    
+
+
